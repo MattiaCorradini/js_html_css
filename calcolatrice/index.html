@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="lul.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcolatrice</title>
+</head>
+<body>
+    <div id="calcolatrice">
+        <form name="form">
+            <br>
+            <input readonly="readonly" class="area" name="area_di_calcolo" value="" placeholder="0">
+            </br>
+            <br>
+              <input type="button" class="tasti" value="C" onclick="resetta()">
+              <input type="button" class="tasti" value="←" onclick="cancella();">
+              <input type="button" class="tasti" value="÷" onclick="digita('/');">
+              <input type="button" class="tasti" value="X" onclick="digita('*');">
+            </br>       
+            <br>
+              <input type="button" class="tasti" value="7" onclick="digita(7);">
+              <input type="button" class="tasti" value="8" onclick="digita(8);">
+              <input type="button" class="tasti" value="9" onclick="digita(9);">
+              <input type="button" class="tasti" value="-" onclick="digita('-');">
+            </br>      
+            <br>
+              <input type="button" class="tasti" value="4" onclick="digita(4);">
+              <input type="button" class="tasti" value="5" onclick="digita(5);">
+              <input type="button" class="tasti" value="6" onclick="digita(6);">
+              <input type="button" class="tasti" value="+" onclick="digita('+');">
+            </br>      
+            <br>
+              <input type="button" class="tasti" value="1" onclick="digita(1);">
+              <input type="button" class="tasti" value="2" onclick="digita(2);">
+              <input type="button" class="tasti" value="3" onclick="digita(3);">
+              <input type="button" class="uguale" value="=" onclick="esegui();">
+            </br>  
+            <br>
+              <input type="button" class="tasti" value="0" onclick="digita(0);" >
+              <input type="button" class="tasti" value="," onclick="digita('.');">
+              <input type="button" class="tasti" value="00" onclick="digita('00');">
+            </br>  
+        </form>
+      </div>
+      <script src="main.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+</body>
+</html>

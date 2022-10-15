@@ -1,0 +1,62 @@
+#calcolatrice{
+    box-shadow: 6px 6px 7px black;
+    background-color: darkslategrey;
+    width:fit-content;
+    margin-top: 10px;
+    margin-left: 500px;
+    padding: 10px 20px 10px 20px;
+  }
+
+.area{
+    margin-top: 30px;
+    width: 404px;
+    height: 100px;
+    box-shadow: 4px 4px 5px black;
+    border-color: black;
+    background-color: lightblue;
+    font-size: 40px;
+    font-style: oblique;
+}
+
+.tasti{
+    position: relative;
+    width: 100px;
+    height: 80px;
+    box-shadow: 4px 4px 5px black;
+    border-color: black;
+    border-radius: 2px;
+    background-color: royalblue;
+    font-size: 30px;
+}
+
+.tasti:active{
+    position: relative;
+    top: +3px;
+}
+
+.tasti:hover{
+    background-color: rgba(65, 105, 225, 0.43);
+    transition: 0.3s;
+}
+
+.uguale:hover{
+    background-color: rgba(65, 105, 225, 0.43);
+    transition: 0.3s;
+}
+.uguale:active{
+    position: absolute;
+    left: 841px;
+    top: +491px;
+}
+
+.uguale{
+    position: absolute;
+    left: 841px;
+    width: 100px;
+    height: 179px;
+    box-shadow: 4px 4px 5px black;
+    border-color: black;
+    border-radius: 2px;
+    background-color: royalblue;
+    font-size: 40px;
+}
