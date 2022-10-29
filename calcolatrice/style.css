@@ -4,6 +4,7 @@
     width:fit-content;
     margin-top: 10px;
     margin-left: 500px;
+    border-radius: 15px;
     padding: 10px 20px 10px 20px;
   }
 
@@ -24,7 +25,7 @@
     height: 80px;
     box-shadow: 4px 4px 5px black;
     border-color: black;
-    border-radius: 2px;
+    border-radius: 5px;
     background-color: royalblue;
     font-size: 30px;
 }
@@ -56,7 +57,7 @@
     height: 179px;
     box-shadow: 4px 4px 5px black;
     border-color: black;
-    border-radius: 2px;
+    border-radius: 5px;
     background-color: royalblue;
     font-size: 40px;
 }
