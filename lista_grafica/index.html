@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.33.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <html data-theme="cupcake"></html>
+</head>
+<body>
+    <h2>Lista impegni 1.0</h2>
+    <input placeholder="Type here" class="input input-bordered input-secondary w-full max-w-xs" type="text" id="edtNota">
+    <button class="btn" id="btnAdd">Aggiungi</button>
+    <button class="btn" id="btnClear">Cancella Lista</button>
+    <br>
+  
+    <br>
+    <div class="overflow-x-auto">
+        <table class="table w-full">
+          <!-- head -->
+          <thead>
+            <tr>
+              <th>N.</th>
+              <th>Data</th>
+              <th>Ora</th>
+              <th>Nota</th>
+            </tr>
+          </thead>
+          <tbody id="tabBody">
+                        
+          </tbody>
+        </table>
+      </div>
+      <br>
+ <script src="Es_1.js"></script>   
+</body>
+</html>
