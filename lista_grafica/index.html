@@ -10,22 +10,22 @@
     <html data-theme="cupcake"></html>
 </head>
 <body>
-    <h2>Lista impegni</h2>
-    <input class="input input-bordered input-secondary w-full max-w-xs" type="text" id="edtNota">
-    <button class="btn" id="btnAdd">Aggiungi</button>
-    <button class="btn" id="btnClear">Cancella</button>
+    <h1>Lista impegni</h1>
+    <br>
+    <input placeholder="Type here" class="input input-bordered input-lg w-full max-w-xs" type="text" id="edtNota">
+    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" id="btnAdd">Aggiungi</button>
+    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" id="btnClear">Cancella</button>
     <br>
   
     <br>
     <div class="overflow-x-auto">
         <table class="table w-full">
-          <!-- head -->
           <thead>
             <tr>
-              <th>N°</th>
-              <th>Data</th>
-              <th>Ora</th>
-              <th>Nota</th>
+              <th>N° IMPEGNO</th>
+              <th>DATA</th>
+              <th>ORA</th>
+              <th>IMPEGNO</th>
             </tr>
           </thead>
           <tbody id="tabBody">       

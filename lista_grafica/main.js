@@ -1,18 +1,10 @@
-/*
-1. Cancellazione lista in avvio
-2. Alla pressione del bottone inserire un item nella 
-    lista contenente data e ora + il testo dell'input text
-3. Inserire codice per cancellare la lista mediante
-    bottone
-*/
-// Definizione oggetti html
 let edtNota = document.getElementById("edtNota")
 const btnAdd = document.getElementById("btnAdd")
 const btnClear = document.getElementById("btnClear")
 const ulTag = document.getElementById("listToDo")
 const bodyTag = document.getElementById("tabBody")
 let cont = 1;
-// FUNZIONI
+
 function ClearList(){
     bodyTag.innerHTML = "";
     localStorage.clear();
@@ -46,9 +38,9 @@ function AddToTab(text){
     cont = cont + 1;
     
 }
-// EVENTI
+
 btnClear.onclick = function(){
-    if (confirm("ATTENZIONE: Cancellazione lista") == true)
+    if (confirm("ATTENZIONE: Sei sicuro di voler cancellare la lista?") == true)
     {
         ClearList()
     }
@@ -58,12 +50,11 @@ btnAdd.onclick = function(){
     const giorno = data.toLocaleDateString();
     const ora = data.toLocaleTimeString();
     const testo = edtNota.value
-    //AddToList(giorno + " " + ora + " " + testo);
     AddToTab(testo);
     edtNota.value = ""
     edtNota.focus()
     localStorage.setItem("Lista", ulTag.innerHTML)
 }
-// MAIN
+
 ClearList()
 
