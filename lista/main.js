@@ -10,13 +10,13 @@ let edtNota = document.getElementById("edtNota")
 const btnAdd = document.getElementById("btnAdd")
 const btnClear = document.getElementById("btnClear")
 const ulTag = document.getElementById("listToDo")
-// FUNZIONI
+
 function ClearList(){
     let liTags = document.querySelectorAll("ul>li");
     for(let i = 0; i < liTags.length; i++){
         ulTag.removeChild(liTags[i]);
     }
-}
+}    
 
 function AddToList(text, append = true){
     let elementToAdd = document.createElement("li");
@@ -27,7 +27,7 @@ function AddToList(text, append = true){
         ulTag.prepend(elementToAdd);
     }
 }
-// EVENTI
+
 btnClear.onclick = function(){
     if (confirm("sei sicuro di voler cancellare?"))
         ClearList()
@@ -41,6 +41,6 @@ btnAdd.onclick = function(){
     edtNota.value = ""
     edtNota.focus()
 }
-// MAIN
+
 ClearList()
 
